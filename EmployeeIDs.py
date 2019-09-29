@@ -3,19 +3,6 @@ import os, sys, time
 from node import Node
 
 
-def bubble_sort(arr):
-
-    length = len(arr)
-
-    # compares current node with node in front of it to see which is bigger
-    for i in range(length):
-        for j in range(length - i - 1):
-            if arr[j] > arr[j + 1]:
-                tmp = arr[j + 1]
-                arr[j + 1] = arr[j]
-                arr[j] = tmp
-
-
 def swap_nodes(node_a, node_b):
     temp = node_a.item
     node_a.item = node_b.item
