@@ -89,10 +89,11 @@ class AVL_Tree(object):
 
 
 def find_word(root, word):
-    if root is None:  # base case, root is empty.
+    if root is None:  
         return False
-
-    if root.val.lower() == word.lower():  # every search is done in lower case.
+    
+    # Search done in lower case
+    if root.val.lower() == word.lower():
         return True
 
     # Pre order search.
